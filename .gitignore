@@ -22,7 +22,8 @@ backend.log
 .DS_Store
 Thumbs.db
 
-# H2 database files (in-memory, nada a versionar)
+# H2 database files (file-based, não versionar dados locais)
+data/
 *.db
 *.mv.db
 *.trace.db

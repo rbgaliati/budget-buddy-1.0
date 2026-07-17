@@ -1,6 +1,18 @@
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8081/api";
 
 /**
+ * Exporta backup completo do servidor (fonte primária: banco de dados)
+ */
+export async function exportBackupFromServer(): Promise<any> {
+  const response = await fetch(`${API_BASE_URL}/export/backup`);
+  if (!response.ok) {
+    const body = await response.text().catch(() => "");
+    throw new Error(`Falha ao exportar backup: ${response.status} ${response.statusText}${body ? " — " + body : ""}`);
+  }
+  return response.json();
+}
+
+/**
  * Importa dados de backup JSON para o servidor
  */
 export async function importBackupToServer(backupData: any) {

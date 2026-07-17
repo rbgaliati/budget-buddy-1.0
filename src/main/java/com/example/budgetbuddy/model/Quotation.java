@@ -37,6 +37,9 @@ public class Quotation {
     @Column
     private String winnerProposalId;
     
+    @Column
+    private String winnerJustification;
+    
     @OneToMany(mappedBy = "quotation", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference("quotation-items")
     private List<QuotationItem> items = new ArrayList<>();

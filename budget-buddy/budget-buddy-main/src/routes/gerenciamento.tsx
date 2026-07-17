@@ -7,11 +7,10 @@ import { Download, Upload, AlertTriangle } from "lucide-react";
 import { toast } from "sonner";
 import {
   useBudget,
-  getSnapshot,
-  replaceState,
+  forceRehydrate,
   type BudgetState,
 } from "@/lib/budget-store";
-import { importBackupToServer } from "@/lib/import-helper";
+import { importBackupToServer, exportBackupFromServer } from "@/lib/import-helper";
 
 export const Route = createFileRoute("/gerenciamento")({
   head: () => ({
@@ -59,19 +58,29 @@ function Gerenciamento() {
     proposals: proposalsCount,
   };
 
-  const handleBackup = () => {
-    const data = JSON.stringify(getSnapshot(), null, 2);
-    const blob = new Blob([data], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const stamp = new Date().toISOString().slice(0, 16).replace(/[:T]/g, "-");
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `orcamento-obra-backup-${stamp}.json`;
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-    toast.success("Backup gerado com sucesso");
+  const [downloading, setDownloading] = useState(false);
+
+  const handleBackup = async () => {
+    setDownloading(true);
+    try {
+      const data = await exportBackupFromServer();
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const stamp = new Date().toISOString().slice(0, 16).replace(/[:T]/g, "-");
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `orcamento-obra-backup-${stamp}.json`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      toast.success("Backup gerado com sucesso");
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      toast.error("Falha ao gerar backup: " + msg);
+    } finally {
+      setDownloading(false);
+    }
   };
 
   const handleFile = async (file: File) => {
@@ -99,21 +108,17 @@ function Gerenciamento() {
     if (!pending) return;
     setRestoring(true);
     try {
-      // Persiste no backend (fonte primária de dados)
       const result = await importBackupToServer(pending);
       if (!result.success) {
         toast.error("Falha ao sincronizar com o backend: " + result.message);
         return;
       }
-      // Atualiza o estado local para refletir imediatamente na UI
-      replaceState(pending);
       setPending(null);
+      // Rehidrata do backend para garantir que o estado reflete o que foi gravado
+      await forceRehydrate();
       toast.success(result.message || "Dados restaurados com sucesso");
     } catch (err) {
-      // Backend indisponível — salva só no localStorage como fallback
-      replaceState(pending);
-      setPending(null);
-      toast.warning("Backend indisponível — dados restaurados localmente. Sincronize ao reconectar.");
+      toast.error("Backend indisponível — não foi possível restaurar. Verifique se o servidor está rodando.");
     } finally {
       setRestoring(false);
     }
@@ -188,10 +193,10 @@ function Gerenciamento() {
             Baixe um arquivo JSON contendo <strong>todos</strong> os dados: etapas, contas,
             despesas, itens do inventário, cotações e propostas de fornecedores.
           </p>
-          <Button onClick={handleBackup} className="gap-2">
+          <LoadingButton onClick={handleBackup} className="gap-2" isLoading={downloading} loadingText="Gerando…">
             <Download className="h-4 w-4" />
             Baixar backup (.json)
-          </Button>
+          </LoadingButton>
         </CardContent>
       </Card>
 

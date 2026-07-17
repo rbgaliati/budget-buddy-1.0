@@ -29,6 +29,9 @@ public class Proposal {
     private BigDecimal total;
     
     @Column
+    private BigDecimal discountPercent;
+    
+    @Column
     private String notes;
     
     @OneToMany(mappedBy = "proposal", cascade = CascadeType.ALL, orphanRemoval = true)

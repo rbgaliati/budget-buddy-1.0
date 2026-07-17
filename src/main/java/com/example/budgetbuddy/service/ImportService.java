@@ -185,6 +185,7 @@ public class ImportService {
                     quotation.setCreatedAt(LocalDateTime.now());
                 }
                 quotation.setWinnerProposalId(quotationDto.winnerProposalId);
+                quotation.setWinnerJustification(quotationDto.winnerJustification);
                 entityManager.persist(quotation);
                 quotationsCount++;
 
@@ -206,6 +207,7 @@ public class ImportService {
                         proposal.setId(proposalDto.id);
                         proposal.setSupplier(proposalDto.supplier);
                         proposal.setNotes(proposalDto.proposalNumber);
+                        proposal.setDiscountPercent(proposalDto.discountPercent);
                         proposal.setQuotation(quotation);
                         entityManager.persist(proposal);
 

@@ -316,6 +316,11 @@ export function replaceState(next: BudgetState) {
   persist();
 }
 
+export async function forceRehydrate(): Promise<void> {
+  hydrated = false;
+  await hydrateFromBackend();
+}
+
 export const budgetActions = {
   setProjectName(name: string) {
     state = { ...state, projectName: name };

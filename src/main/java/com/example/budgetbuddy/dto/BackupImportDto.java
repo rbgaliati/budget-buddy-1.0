@@ -62,6 +62,7 @@ public class BackupImportDto {
         public String createdAt;
         public String status;
         public String winnerProposalId;
+        public String winnerJustification;
         public List<QuotationItemDto> items;
         public List<ProposalDto> proposals;
     }
@@ -77,6 +78,7 @@ public class BackupImportDto {
         public String id;
         public String supplier;
         public String proposalNumber;
+        public BigDecimal discountPercent;
         public Map<String, BigDecimal> prices;
     }
 }
