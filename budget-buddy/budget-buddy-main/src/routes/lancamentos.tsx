@@ -796,20 +796,24 @@ function Lancamentos() {
                                                   ))}
                                                 </SelectContent>
                                               </Select>
-                                              <Select
-                                                value={i.paid ? "pago" : "aberto"}
-                                                onValueChange={(v) =>
-                                                  budgetActions.setInstallmentPaid(e.id, i.id, v === "pago")
+                                              <Button
+                                                variant="ghost"
+                                                size="sm"
+                                                className={
+                                                  i.paid
+                                                    ? "h-7 gap-1 text-xs text-green-600 hover:text-green-700"
+                                                    : "h-7 gap-1 text-xs text-amber-600 hover:text-amber-700"
                                                 }
+                                                title={i.paid ? "Clique para marcar como em aberto" : "Clique para marcar como pago"}
+                                                onClick={() => budgetActions.setInstallmentPaid(e.id, i.id, !i.paid)}
                                               >
-                                                <SelectTrigger className="h-7 w-[120px] text-xs">
-                                                  <SelectValue />
-                                                </SelectTrigger>
-                                                <SelectContent>
-                                                  <SelectItem value="aberto">Em aberto</SelectItem>
-                                                  <SelectItem value="pago">Pago</SelectItem>
-                                                </SelectContent>
-                                              </Select>
+                                                {i.paid ? (
+                                                  <CheckCircle2 className="h-3.5 w-3.5" />
+                                                ) : (
+                                                  <AlertCircle className="h-3.5 w-3.5" />
+                                                )}
+                                                {i.paid ? "Pago" : "Em aberto"}
+                                              </Button>
                                             </div>
                                           ))}
                                         </div>
@@ -893,23 +897,29 @@ function Lancamentos() {
                           {status === "parcial" ? (
                             <Badge variant="secondary">Parcial</Badge>
                           ) : (
-                            <Select
-                              value={status}
-                              onValueChange={(v) => {
-                                const paid = v === "pago";
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              className={
+                                status === "pago"
+                                  ? "gap-1 text-green-600 hover:text-green-700"
+                                  : "gap-1 text-amber-600 hover:text-amber-700"
+                              }
+                              title={status === "pago" ? "Clique para marcar como em aberto" : "Clique para marcar como pago"}
+                              onClick={() => {
+                                const paid = status !== "pago";
                                 items.forEach((r) =>
                                   budgetActions.setInstallmentPaid(r.e.id, r.i.id, paid),
                                 );
                               }}
                             >
-                              <SelectTrigger className="h-8 w-[130px]">
-                                <SelectValue />
-                              </SelectTrigger>
-                              <SelectContent>
-                                <SelectItem value="aberto">Em aberto</SelectItem>
-                                <SelectItem value="pago">Pago</SelectItem>
-                              </SelectContent>
-                            </Select>
+                              {status === "pago" ? (
+                                <CheckCircle2 className="h-4 w-4" />
+                              ) : (
+                                <AlertCircle className="h-4 w-4" />
+                              )}
+                              {status === "pago" ? "Pago" : "Em aberto"}
+                            </Button>
                           )}
                         </TableCell>
                       </TableRow>
@@ -961,24 +971,30 @@ function Lancamentos() {
                                         </Select>
                                       </TableCell>
                                       <TableCell>
-                                        <Select
-                                          value={i.paid ? "pago" : "aberto"}
-                                          onValueChange={(v) =>
+                                        <Button
+                                          variant="ghost"
+                                          size="sm"
+                                          className={
+                                            i.paid
+                                              ? "gap-1 text-green-600 hover:text-green-700"
+                                              : "gap-1 text-amber-600 hover:text-amber-700"
+                                          }
+                                          title={i.paid ? "Clique para marcar como em aberto" : "Clique para marcar como pago"}
+                                          onClick={() =>
                                             budgetActions.setInstallmentPaid(
                                               e.id,
                                               i.id,
-                                              v === "pago",
+                                              !i.paid,
                                             )
                                           }
                                         >
-                                          <SelectTrigger className="h-8 w-[130px]">
-                                            <SelectValue />
-                                          </SelectTrigger>
-                                          <SelectContent>
-                                            <SelectItem value="aberto">Em aberto</SelectItem>
-                                            <SelectItem value="pago">Pago</SelectItem>
-                                          </SelectContent>
-                                        </Select>
+                                          {i.paid ? (
+                                            <CheckCircle2 className="h-4 w-4" />
+                                          ) : (
+                                            <AlertCircle className="h-4 w-4" />
+                                          )}
+                                          {i.paid ? "Pago" : "Em aberto"}
+                                        </Button>
                                       </TableCell>
                                     </TableRow>
                                   ))}
