@@ -1,0 +1,2374 @@
+{
+  "projectName": "Projeto Jardim Tereza",
+  "stages": [
+    {
+      "id": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "name": "01 - Planejamento",
+      "planned": 40000
+    },
+    {
+      "id": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "name": "02 - Preparações e Fundação",
+      "planned": 80000
+    },
+    {
+      "id": "9bfc5636-8511-4bb0-8f36-8fddf3c9669b",
+      "name": "03 - Estrutura 1º Pavimento",
+      "planned": 60000
+    },
+    {
+      "id": "6c5f9574-11f4-4b44-9113-33c404f62eec",
+      "name": "04 - Estrutura 2º Pavimento",
+      "planned": 60000
+    },
+    {
+      "id": "53268745-12f2-4df4-84ae-42d25c331ac4",
+      "name": "05 - Alvenaria 1º Pavimento",
+      "planned": 60000
+    },
+    {
+      "id": "6f048d51-b503-4d45-8e07-1416372f4312",
+      "name": "06- Alvenaria 2º Pavimento",
+      "planned": 60000
+    },
+    {
+      "id": "925db6c1-05af-4fc0-b8e0-f01684076d61",
+      "name": "07 - Cobertura",
+      "planned": 40000
+    },
+    {
+      "id": "975071c6-085a-4df2-9464-77dbe8c7d299",
+      "name": "08 - Instalações Elétricas e Hidráulicas",
+      "planned": 120000
+    },
+    {
+      "id": "305c0bb6-0bdf-4be6-b520-7a2443785c15",
+      "name": "09 - Revestimentos",
+      "planned": 200000
+    },
+    {
+      "id": "169b9fd5-97fb-4bc8-a084-826a6fdebe34",
+      "name": "10 - Pintura",
+      "planned": 40000
+    },
+    {
+      "id": "d8643fd6-6f75-4ea9-a2bc-9b13aa41ace3",
+      "name": "11 - Acabamentos",
+      "planned": 30000
+    },
+    {
+      "id": "d9872baa-3e81-40f3-b671-46ce072ac29b",
+      "name": "12 - Entrega",
+      "planned": 10000
+    }
+  ],
+  "accounts": [
+    {
+      "id": "8b37d919-3956-4e98-acc7-7e70f1bf6aff",
+      "name": "Conta C6 Bank",
+      "type": "conta"
+    },
+    {
+      "id": "06c95218-53b9-4a52-9a15-065fcd12b2ae",
+      "name": "Cartão BTG Karla",
+      "type": "cartao"
+    },
+    {
+      "id": "28ece252-3960-40ce-8be3-20ce90ac595b",
+      "name": "Conta BTG Rogerio",
+      "type": "conta"
+    },
+    {
+      "id": "be94650a-cefc-459d-bc0a-75af3c83d9f8",
+      "name": "Conta Bradesco",
+      "type": "conta"
+    },
+    {
+      "id": "4481d3c0-7690-4740-90c4-6b1f19c4cc9a",
+      "name": "Conta BTG Karla",
+      "type": "conta"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "742239e2-5acb-4b36-890c-c1d0363b8d17",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Análise topográfica",
+      "supplier": "Bilão Topografia",
+      "amount": 600,
+      "date": "2024-07-25",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "680b3167-edce-445b-9af5-5433f6c6f670",
+          "kind": "servico",
+          "description": "Serviço de análise topográfica",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 600
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "c37a2765-ca99-4b44-b070-8914a29e4abd",
+          "dueDate": "2024-07-25",
+          "amount": 600,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "03a2b149-2fd0-4a34-aca8-ced8673b82fb",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Projeto Executivo",
+      "supplier": "Jonatas Krugg",
+      "amount": 9000,
+      "date": "2025-04-01",
+      "paymentMethod": "parcelado",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "ae52ed23-b98c-40b3-aa79-c0a141f1c1e0",
+          "kind": "servico",
+          "description": "Serviço de Projeto Executivo",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 9000
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "522e381d-56ac-479c-9136-ceb4c3026e1c",
+          "dueDate": "2024-04-01",
+          "amount": 2700,
+          "paid": true,
+          "accountId": "be94650a-cefc-459d-bc0a-75af3c83d9f8"
+        },
+        {
+          "id": "da18ca31-560f-4508-95f8-5638fa781ab4",
+          "dueDate": "2025-11-10",
+          "amount": 3000,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "56f9bdd0-4ab0-4bd8-8be2-a5eed8457bd3",
+          "dueDate": "2025-12-10",
+          "amount": 3300,
+          "paid": true,
+          "accountId": "28ece252-3960-40ce-8be3-20ce90ac595b"
+        }
+      ]
+    },
+    {
+      "id": "e9bd8ab6-19bd-4cc1-add9-c3b2bb416d43",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Projeto Arquitetônico",
+      "supplier": "Diego Fonseca",
+      "amount": 10800,
+      "date": "2024-10-31",
+      "paymentMethod": "parcelado",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "55b80411-359a-4531-b7b6-75919315de00",
+          "kind": "servico",
+          "description": "Serviço de Projeto Arquitetônico",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 10800
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "84c26ddc-ddfd-41d6-906e-a82be57c0679",
+          "dueDate": "2024-10-31",
+          "amount": 3600,
+          "paid": true,
+          "accountId": "be94650a-cefc-459d-bc0a-75af3c83d9f8"
+        },
+        {
+          "id": "629fce30-a8a1-4aa0-aeea-fd6b08e91ab6",
+          "dueDate": "2024-12-07",
+          "amount": 2400,
+          "paid": true,
+          "accountId": "4481d3c0-7690-4740-90c4-6b1f19c4cc9a"
+        },
+        {
+          "id": "caccc44f-39c9-4264-a677-3d5b9c5d5e0b",
+          "dueDate": "2025-01-06",
+          "amount": 2400,
+          "paid": true,
+          "accountId": "be94650a-cefc-459d-bc0a-75af3c83d9f8"
+        },
+        {
+          "id": "d15aa17f-e36d-4a8f-abb9-be3919e7239d",
+          "dueDate": "2025-10-14",
+          "amount": 2400,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "5aa95b68-fec1-41ab-9f4f-6ceac5a4328a",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Registro do projeto CREA",
+      "supplier": "CAU-SP",
+      "amount": 125.4,
+      "date": "2025-03-26",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "6383bdaf-3370-41d0-93d8-f3fd39ee8645",
+          "kind": "servico",
+          "description": "Taxa registro projeto no CREA",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 125.4
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "488ed9b9-54c0-4b67-9929-919410fba050",
+          "dueDate": "2025-03-26",
+          "amount": 125.4,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "b75f45dc-a0cc-4ed1-a1d8-f528dc4e3d2f",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "RRT para projeto",
+      "supplier": "CAU-SP",
+      "amount": 250.8,
+      "date": "2025-08-18",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "40eb95b2-75d2-4d01-9d26-ba8894a40abf",
+          "kind": "servico",
+          "description": "Taxas registro RRT para obra",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 250.8
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "dfa5e14d-a5e6-44d6-9d4e-97ff3226437a",
+          "dueDate": "2025-08-18",
+          "amount": 250.8,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "76c8a48e-8efa-47cf-b00d-f954e0455675",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Custos alvará processo",
+      "supplier": "PM Itatiba",
+      "amount": 620.62,
+      "date": "2025-09-01",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "ff044ddc-2825-421f-b027-dbef2020e2d6",
+          "kind": "servico",
+          "description": "Taxas Prefeitura para alvará do projeto",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 620.62
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "4cc3d01b-da80-4b2e-a909-85e3f0448563",
+          "dueDate": "2025-09-01",
+          "amount": 620.62,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "97d3dc49-737f-442e-9413-6209c2727010",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "RRT Acompanhamento",
+      "supplier": "CAU-SP",
+      "amount": 250.8,
+      "date": "2025-10-09",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "5fa80692-8ef4-45e7-8582-f6e27c8500a7",
+          "kind": "servico",
+          "description": "Taxas registro RRT para acompanhamento",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 250.8
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "ae62c393-451c-4e31-a6c7-83d26d0ba8c7",
+          "dueDate": "2025-10-09",
+          "amount": 250.8,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "62793a44-064d-47e3-af32-04eb8a709b3a",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "ISS Projeto",
+      "supplier": "PM Itatiba",
+      "amount": 1958.9,
+      "date": "2026-02-10",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "1142ff4f-64cd-486b-a8cc-e4b9efd5c703",
+          "kind": "servico",
+          "description": "Taxas Prefeitura ISS Obra",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 1958.9
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "83aa67ca-71f7-40a9-bee9-7c8dcf4021c6",
+          "dueDate": "2026-02-10",
+          "amount": 1958.9,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "2da31ecc-d797-4685-af3c-97bb3998e938",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Sondagem Solo",
+      "supplier": "IAS Sondagem",
+      "amount": 1750,
+      "date": "2026-02-23",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "5b5fc84b-2bdb-43c5-a099-80c040624038",
+          "kind": "material",
+          "description": "Serviço de sondagem do solo",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 1750
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "b5a19e1a-d13a-4986-bec3-dc8ea137a905",
+          "dueDate": "2026-02-23",
+          "amount": 1750,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "3a4ac3c9-a9a0-413e-bd5e-5a131f269d7d",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Limpeza terreno",
+      "supplier": "Ita Areia",
+      "amount": 2500,
+      "date": "2026-03-25",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "ef8181a1-4724-4cd7-aea9-4fa54c5fc791",
+          "kind": "material",
+          "description": "Serviço de limpeza e terraplanagem básica",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 2500
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "b45d14da-818d-4547-b5ef-e77d367a09be",
+          "dueDate": "2026-03-25",
+          "amount": 2500,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "a48eea90-c61f-47a2-a5ba-c0537769fc9d",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Madeiras para gabarito",
+      "supplier": "Ita Madeiras (A&Z Madeiras)",
+      "amount": 520,
+      "date": "2026-04-06",
+      "paymentMethod": "avista",
+      "receiptType": "nota_fiscal",
+      "items": [
+        {
+          "id": "676fb1e5-4889-4566-83cd-d8936911982a",
+          "kind": "material",
+          "description": "Pontalete eucalipto 3m",
+          "unit": "un",
+          "quantity": 12,
+          "unitValue": 10.04
+        },
+        {
+          "id": "7d4ff25d-8818-45e7-92a6-69f0c47abddd",
+          "kind": "material",
+          "description": "Prego 18x27",
+          "unit": "kg",
+          "quantity": 1,
+          "unitValue": 16.76
+        },
+        {
+          "id": "2881723b-70bb-4c36-8f7d-2189d2e63798",
+          "kind": "material",
+          "description": "Preço aço 18 x 27 (cento)",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 26.96
+        },
+        {
+          "id": "21dc8d46-0df0-47b9-a651-183ac9d05592",
+          "kind": "material",
+          "description": "Tabua pinus 15 x 2 x 30m",
+          "unit": "un",
+          "quantity": 30,
+          "unitValue": 11.86
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "Aguardar NF pedido 123084",
+      "installments": [
+        {
+          "id": "6decdf43-d9da-48d8-9101-00e6e246c582",
+          "dueDate": "2026-04-06",
+          "amount": 520,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "b9e9bf3a-bbe6-4e46-a2de-8dfd50bd25a7",
+      "stageId": "400a240b-010d-4ef2-81a6-61a6523fe113",
+      "description": "Projeto estrutural fundação",
+      "supplier": "Jonatas Krugg",
+      "amount": 2500,
+      "date": "2026-04-16",
+      "paymentMethod": "avista",
+      "receiptType": "sem_comprovante",
+      "items": [
+        {
+          "id": "bbb0af85-7f7c-4125-9d47-53c3890bd04a",
+          "kind": "material",
+          "description": "Serviço de Projeto Estrutural",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 2500
+        }
+      ],
+      "hasPendency": false,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "e1d4fdfc-c077-4d85-9de0-cdb2800da400",
+          "dueDate": "2026-04-16",
+          "amount": 2500,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "1969fe04-1c55-4177-8d31-2ca1c5755335",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Shiva Energia - Aquisição do Poste Padrão",
+      "supplier": "Shiva Energia",
+      "amount": 1900,
+      "date": "2026-04-22",
+      "paymentMethod": "avista",
+      "receiptType": "recibo",
+      "items": [
+        {
+          "id": "a202a760-484e-4828-8569-78755b9daf79",
+          "kind": "material",
+          "description": "Poste de energia completo trifasico 16mm cobre",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 1700
+        },
+        {
+          "id": "7f11a38e-4b92-42c9-b0cd-f870fe8b166b",
+          "kind": "servico",
+          "description": "Serviço de escavação para poste",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 200
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "Pedir NF",
+      "installments": [
+        {
+          "id": "c1321245-2fe3-47fe-861f-b010319c3bbc",
+          "dueDate": "2026-04-22",
+          "amount": 1900,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "69b3a9bc-2538-4253-9ee7-31805aa1c0e3",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Madeireira Santa Luzia - Materiais para barracão 01 (PIX)",
+      "supplier": "Madeireira Santa Luzia",
+      "amount": 1980,
+      "date": "2026-05-07",
+      "paymentMethod": "avista",
+      "receiptType": "nota_fiscal",
+      "items": [
+        {
+          "id": "1b28bfdb-28da-4834-8a2a-4f0d8797df31",
+          "kind": "material",
+          "description": "Sarrafo pinus 10 x 3m",
+          "unit": "un",
+          "quantity": 50,
+          "unitValue": 7.99
+        },
+        {
+          "id": "3a3997d5-e7fb-48de-81f5-1fc7115fed21",
+          "kind": "material",
+          "description": "Tabua pinus 30 x 3m",
+          "unit": "un",
+          "quantity": 30,
+          "unitValue": 31.22
+        },
+        {
+          "id": "1b3dbac5-5bbb-4dd4-bd06-7d5cbe570bfe",
+          "kind": "material",
+          "description": "Tabua pinus 20 x 3m",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 15.98
+        },
+        {
+          "id": "4799cf9f-16ef-4860-9a59-60e715634246",
+          "kind": "material",
+          "description": "Tabua pinus 15 x 3m",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 11.98
+        },
+        {
+          "id": "75e1c09a-8da7-474d-82c8-d92d7e25a350",
+          "kind": "material",
+          "description": "Arame recozido 12 grosso",
+          "unit": "kg",
+          "quantity": 5,
+          "unitValue": 16.94
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "243178de-4b67-424d-b3ba-df84c76abb9e",
+          "dueDate": "2026-05-07",
+          "amount": 1980,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "e73f383a-8048-4b0f-9576-133cb374c826",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Souza Materiais - Materiais para instalação caixa Sabesp",
+      "supplier": "Souza Materiais",
+      "amount": 300,
+      "date": "2026-05-12",
+      "paymentMethod": "avista",
+      "receiptType": "nota_fiscal",
+      "items": [
+        {
+          "id": "87cd09d2-15c4-42f5-a462-fc831414ce84",
+          "kind": "material",
+          "description": "Tijolo 14x19x29",
+          "unit": "un",
+          "quantity": 30,
+          "unitValue": 2.4
+        },
+        {
+          "id": "7d8cc1fc-6dbb-417c-9f05-55ef07bbbfb3",
+          "kind": "material",
+          "description": "Areia lavada (lata)",
+          "unit": "un",
+          "quantity": 4,
+          "unitValue": 7.5
+        },
+        {
+          "id": "c4c8566e-0b73-4f4a-83ec-746bbfa9d374",
+          "kind": "material",
+          "description": "Serra 110mm 36 dentes",
+          "unit": "un",
+          "quantity": 2,
+          "unitValue": 22.6
+        },
+        {
+          "id": "7d8ff383-eafd-4410-b95e-5dc0a8cbfea1",
+          "kind": "material",
+          "description": "Serra 235mm 36 dentes",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 63.5
+        },
+        {
+          "id": "6817fb61-4f63-47f1-b0a7-b2fe914a3ece",
+          "kind": "material",
+          "description": "Disco para corte ferro fino Makita 1mm",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 3.72
+        },
+        {
+          "id": "408ce10e-7b8f-40e2-85ea-98c68851df86",
+          "kind": "material",
+          "description": "Corrente nº 4",
+          "unit": "m",
+          "quantity": 1,
+          "unitValue": 14.9
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "cb6ab9e5-2699-409a-bb34-e183e2e36df5",
+          "dueDate": "2026-05-12",
+          "amount": 300,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "4a05331c-87c1-465e-b772-390bb60f5dd3",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Madeireira Santa Luzia - Madeirites para caixaria",
+      "supplier": "Madeireira Santa Luzia",
+      "amount": 950,
+      "date": "2026-05-18",
+      "paymentMethod": "avista",
+      "items": [
+        {
+          "id": "a01c2dcf-4744-454e-92be-056053d60768",
+          "kind": "material",
+          "description": "Madeirite 2.20x1.10x9mm",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 47.5
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "2c8f4232-d9e1-4435-8c8f-42a97d827f41",
+          "dueDate": "2026-05-18",
+          "amount": 950,
+          "paid": true,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "56fd1261-4808-409b-b174-563411d60d73",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Madeireira Santa Luzia - Materiais para barracão 01 (CC)",
+      "supplier": "Madeireira Santa Luzia",
+      "amount": 1930,
+      "date": "2026-05-17",
+      "paymentMethod": "cartao",
+      "receiptType": "nota_fiscal",
+      "items": [
+        {
+          "id": "b9d424d3-0166-4666-985f-e7a9b011657f",
+          "kind": "material",
+          "description": "Parafuso para telhas",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 0.79
+        },
+        {
+          "id": "e8435923-793a-43d2-8538-e841cfe6b264",
+          "kind": "material",
+          "description": "Telha Brasilit 1.83x1.10x0.5mm",
+          "unit": "un",
+          "quantity": 6,
+          "unitValue": 58.62
+        },
+        {
+          "id": "62e1b0e1-93a0-40f9-b344-5da7282d783f",
+          "kind": "material",
+          "description": "Corrente soldada 6mm",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 41.3
+        },
+        {
+          "id": "b38aa355-7aa2-400e-b7c0-408d113bc029",
+          "kind": "material",
+          "description": "Cadeado Pado 35mm",
+          "unit": "un",
+          "quantity": 2,
+          "unitValue": 40.96
+        },
+        {
+          "id": "f88310c4-383a-450f-9462-4f240afdbd76",
+          "kind": "material",
+          "description": "Dobradiça pino bola 3 1/2 galvanizado",
+          "unit": "un",
+          "quantity": 2,
+          "unitValue": 26.64
+        },
+        {
+          "id": "ae3e86dd-d399-4ad3-9895-5dc02125136b",
+          "kind": "material",
+          "description": "Prego 18x27",
+          "unit": "un",
+          "quantity": 6,
+          "unitValue": 18.79
+        },
+        {
+          "id": "02b55b39-e3fb-464a-b6e7-93f3ea24f84f",
+          "kind": "material",
+          "description": "Madeirite 2.20x1.10x9mm",
+          "unit": "un",
+          "quantity": 22,
+          "unitValue": 49.62
+        },
+        {
+          "id": "e28f0799-8663-4c02-a7dc-9fb37165b89a",
+          "kind": "material",
+          "description": "Pontalete eucalipto 3m",
+          "unit": "un",
+          "quantity": 20,
+          "unitValue": 9.08
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "8208cc36-94f4-48c9-a7b9-b0d3563c6301",
+          "dueDate": "2026-06-17",
+          "amount": 1930,
+          "paid": false,
+          "accountId": "06c95218-53b9-4a52-9a15-065fcd12b2ae"
+        }
+      ]
+    },
+    {
+      "id": "e193a5e1-cbc5-4512-a3e5-b4d85a7ca902",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 4230,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "items": [
+        {
+          "id": "c0bfe3d0-2196-45a9-bb77-c1fc2b701ed6",
+          "kind": "material",
+          "description": "Serviços de acompanhamento técnico da obra",
+          "unit": "un",
+          "quantity": 1,
+          "unitValue": 28200
+        }
+      ],
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "14de0297-ddad-4cf7-b0f1-8016d46e83b1",
+          "dueDate": "2026-05-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "11a64020-d7fb-4843-88a3-3616b87fb1a9",
+          "dueDate": "2026-06-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "eeaa8aef-b076-49bb-95cc-9a829c2be31d",
+          "dueDate": "2026-07-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "3bae2786-70b9-4e7e-a8d3-70c1f9562854",
+          "dueDate": "2026-08-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f9158243-c614-4179-a8f6-67a01d1eca5b",
+          "dueDate": "2026-09-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "3866fdfb-4bc5-4959-af8d-65507c6745a2",
+          "dueDate": "2026-10-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "08066856-f15b-40b2-b2a2-4236a5f90a97",
+          "dueDate": "2026-11-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "87330cb7-6b09-4662-8388-afe87a060403",
+          "dueDate": "2026-12-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "07882066-73fd-4329-9f38-806397c26a43",
+          "dueDate": "2027-01-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f8fc9f97-a813-47f2-affe-b4ef9eaf9132",
+          "dueDate": "2027-02-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "0938154b-f085-4cc5-8b7c-e551f8839b74",
+          "dueDate": "2027-03-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "ae39d3f1-fe51-43f2-b200-807ddbe06112",
+          "dueDate": "2027-04-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "c8834e0c-0f69-48b3-a11b-b16ca733522d",
+      "stageId": "9bfc5636-8511-4bb0-8f36-8fddf3c9669b",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 2115,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "75a25ff5-0529-4a05-8191-348869ac8ec7",
+          "dueDate": "2026-05-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "c51e928b-1ea0-4b4b-8ed3-bb9d4becf23f",
+          "dueDate": "2026-06-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "3f371139-0d4b-44c6-9cb1-960e78ac898b",
+          "dueDate": "2026-07-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "b25ca029-cd37-4d28-bd43-056bc62a1098",
+          "dueDate": "2026-08-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "095adbed-0f80-4068-85a9-52f07f865b07",
+          "dueDate": "2026-09-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "1906ae3a-e1b4-4362-a86b-881110932f3d",
+          "dueDate": "2026-10-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "7fefe871-a902-4540-9f5d-b71acaf1ea91",
+          "dueDate": "2026-11-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f3a479a8-2715-40e1-ae35-c9dcdd2d200d",
+          "dueDate": "2026-12-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "4f358b30-3f97-462f-b62e-722d2aedcb81",
+          "dueDate": "2027-01-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "07ef35f3-d040-41f2-85b8-f77121cf858e",
+          "dueDate": "2027-02-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "b90fa8ef-35bd-47f8-bc1f-56388ce4f8cf",
+          "dueDate": "2027-03-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "7ba34366-3cd2-4a73-913b-7f7bda4e697c",
+          "dueDate": "2027-04-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "3b360a39-1846-401b-ab31-b994bf5947fc",
+      "stageId": "6c5f9574-11f4-4b44-9113-33c404f62eec",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 2115,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "82caf9de-8221-4705-8ba0-eef5942687cb",
+          "dueDate": "2026-05-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "34c215a5-2129-43b8-9158-b2af815c633b",
+          "dueDate": "2026-06-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "c2c2047d-0fc2-4fad-9907-738bcfa4a62c",
+          "dueDate": "2026-07-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "8a4c16ab-2e30-426a-9431-24336bb6611a",
+          "dueDate": "2026-08-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "000ba575-c050-4ac6-b073-6738cf4b275e",
+          "dueDate": "2026-09-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "d2007d35-07f5-44f3-972d-928fdd029091",
+          "dueDate": "2026-10-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f45e2748-0f98-47b1-baf2-df8819335ddb",
+          "dueDate": "2026-11-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "92678393-2f0c-4926-b756-a85c77427630",
+          "dueDate": "2026-12-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "57593cf1-67f6-4c76-8160-75342da8fdeb",
+          "dueDate": "2027-01-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "9d1cb8d1-08eb-4f7a-b15b-0e2faf9b04b0",
+          "dueDate": "2027-02-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "83b6b6f7-e054-4d43-8fb8-2898a1a9c2e5",
+          "dueDate": "2027-03-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "07b8d742-e5b3-4ff9-82c0-43d25ff27147",
+          "dueDate": "2027-04-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "be0e8920-304f-4a18-8f44-a5bb3622795b",
+      "stageId": "53268745-12f2-4df4-84ae-42d25c331ac4",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 2115,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "c34750f7-5e66-4d66-9b49-345577b03497",
+          "dueDate": "2026-05-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "e24669cb-84f5-406d-b54f-47d0bdba02a1",
+          "dueDate": "2026-06-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "710c190e-7d29-4c1f-a066-3576118ab715",
+          "dueDate": "2026-07-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "b1accdb9-da0f-4dd5-a2c3-318a7be7976c",
+          "dueDate": "2026-08-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "73699b6c-cbc6-4fa6-889a-a2492c4822e8",
+          "dueDate": "2026-09-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "c8deabb9-f8bb-4729-ac94-f66d353cdacf",
+          "dueDate": "2026-10-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "aaede82a-9195-4809-b1bd-7a1a6eb46fca",
+          "dueDate": "2026-11-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "82799efb-fc7b-4784-80de-aafaef06a66a",
+          "dueDate": "2026-12-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "a591360e-ed31-4d37-ad58-c6275d5332d9",
+          "dueDate": "2027-01-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "1e7c0a52-4209-4289-951b-2170335782e0",
+          "dueDate": "2027-02-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "038e93c0-ad56-49ad-84c0-b7df8d571fe6",
+          "dueDate": "2027-03-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "290b0282-ddf8-425f-8d3b-9111840dbbfc",
+          "dueDate": "2027-04-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "dd2f9eb4-756c-4800-8b73-3f83f21ea071",
+      "stageId": "6f048d51-b503-4d45-8e07-1416372f4312",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 2115,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "f800307b-4369-4f56-beb2-049168e28ae1",
+          "dueDate": "2026-05-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "1bf11eef-3f26-4253-9136-c503911c82b4",
+          "dueDate": "2026-06-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "b41db4e6-5df5-441c-a863-dcf2f2c9dcb4",
+          "dueDate": "2026-07-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "7fcf4844-c36f-431a-8694-a735c09cc2f1",
+          "dueDate": "2026-08-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "41012631-3bd8-4531-be4a-e9b8e24ceb79",
+          "dueDate": "2026-09-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "829aa716-9599-4354-a4e7-f9c798f2ec6e",
+          "dueDate": "2026-10-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "eaa318cd-10ba-4b7d-b530-143ff68342d5",
+          "dueDate": "2026-11-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "4f228b51-da27-48bc-b1c9-da37f31a1a5f",
+          "dueDate": "2026-12-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "d583c9f8-b7cc-4c4a-ab46-33896419d644",
+          "dueDate": "2027-01-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "13d961ab-b38e-46e5-9e02-b8c75ae5e233",
+          "dueDate": "2027-02-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "40d22d66-8c56-48a0-a0a4-8d40cc5f2edc",
+          "dueDate": "2027-03-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "58a2e9e8-2fe1-4fed-87d0-96782209ba5a",
+          "dueDate": "2027-04-25",
+          "amount": 176.25,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "a3958e4b-0cdf-408b-a5d0-727200a3e48d",
+      "stageId": "925db6c1-05af-4fc0-b8e0-f01684076d61",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 1410,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "74e54ab6-4bb7-44c6-8d0b-cbdc5048abf5",
+          "dueDate": "2026-05-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "672fec21-9ab7-431f-9516-3bf0496ef38e",
+          "dueDate": "2026-06-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "1f917777-9c49-4b0c-bfd7-5ded97d25625",
+          "dueDate": "2026-07-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "421ca5d1-df06-465b-b2fd-cc1bd8885400",
+          "dueDate": "2026-08-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "a0d16fc7-47a8-44a7-b156-cf8b05aad11f",
+          "dueDate": "2026-09-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "0dd2a576-3f44-40cf-945c-6dc386433a35",
+          "dueDate": "2026-10-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "7119e9f9-8396-4337-bb28-db412f45f7a3",
+          "dueDate": "2026-11-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "685a5a93-2690-4a70-9832-c51dbb4e2427",
+          "dueDate": "2026-12-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "25e76da0-67eb-4501-8f48-67d9595f2d52",
+          "dueDate": "2027-01-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "015dc90b-bd30-4a1c-808b-7ca618b75ba5",
+          "dueDate": "2027-02-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "5bbe6900-38a5-48c3-af86-0694bcbf1c61",
+          "dueDate": "2027-03-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "571ded3e-8f0e-4132-b143-09a671dbfc42",
+          "dueDate": "2027-04-25",
+          "amount": 117.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "4e200fb1-9b70-4ee7-8829-0b22c1850d18",
+      "stageId": "975071c6-085a-4df2-9464-77dbe8c7d299",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 4230,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "6f7a2fb3-e537-48d5-b3bf-a4f737f136a0",
+          "dueDate": "2026-05-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "5b54b523-388b-417b-9a10-5decb91eb02d",
+          "dueDate": "2026-06-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "102637d9-0496-4b81-a226-79b0cde6585d",
+          "dueDate": "2026-07-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "3f717ae3-c919-4de5-8894-754295bdb837",
+          "dueDate": "2026-08-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f083d3db-6859-425a-a5f2-0a2ab3cfc0a6",
+          "dueDate": "2026-09-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "8e7648cd-9469-4841-98e6-3dada5e2c2f5",
+          "dueDate": "2026-10-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "226de5e4-aecc-4fc5-b252-971aa695f8ed",
+          "dueDate": "2026-11-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "2ecd2dbc-55b0-41ee-b9b6-6e332a77045e",
+          "dueDate": "2026-12-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "7633221b-330f-44d9-86af-3b953e9a348a",
+          "dueDate": "2027-01-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "09bf0eac-52ec-4b05-9eb7-271bcf269a13",
+          "dueDate": "2027-02-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "514be635-2b3e-4abc-a85f-0b2e87200670",
+          "dueDate": "2027-03-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "f9f8074c-3998-4472-b738-402fb0d84112",
+          "dueDate": "2027-04-25",
+          "amount": 352.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "45baa0fd-8a32-4e98-8197-f1c7b46c49c0",
+      "stageId": "305c0bb6-0bdf-4be6-b520-7a2443785c15",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 7050,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "40262958-23d4-4e96-88cc-ca254ba67576",
+          "dueDate": "2026-05-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "a60682ae-0e77-44b2-82b8-155cd468166a",
+          "dueDate": "2026-06-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "8bce1e5f-c763-4bd5-a20e-f52370ce27e4",
+          "dueDate": "2026-07-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "dfe8b4f6-f5d5-4b69-9cd7-32d54e06c4b5",
+          "dueDate": "2026-08-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "b1c4dcae-4232-49f3-ae27-2f54e082828e",
+          "dueDate": "2026-09-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "89f2f105-f04c-438a-80c9-5e1ac2c58902",
+          "dueDate": "2026-10-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "19eff292-129b-4a96-a8e8-b7e2c791075e",
+          "dueDate": "2026-11-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "2b0afb42-8cbb-45f5-b239-6c5847bf9799",
+          "dueDate": "2026-12-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "59447398-975a-40e8-9496-53793d1011b2",
+          "dueDate": "2027-01-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "23e16a6e-968a-4731-86d5-8c1f682a2e23",
+          "dueDate": "2027-02-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "10eba565-9e25-4e48-b6df-5978011c828f",
+          "dueDate": "2027-03-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "8390d5bf-50ac-4920-ba8b-3b546875c2d7",
+          "dueDate": "2027-04-25",
+          "amount": 587.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "0f0a51c8-9f13-4e84-89c1-826561a2db9d",
+      "stageId": "169b9fd5-97fb-4bc8-a084-826a6fdebe34",
+      "description": "Acompanhamento de Obra - Diego Fonseca",
+      "supplier": "Diego Fonseca",
+      "amount": 2820,
+      "date": "2026-05-20",
+      "paymentMethod": "parcelado",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "cea11098-85d1-4e6b-a198-5499e514e150",
+          "dueDate": "2026-05-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "243e75e6-8e2a-4bb7-8a26-3ebc1449b876",
+          "dueDate": "2026-06-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "169a6d05-677e-449f-a741-63a4bfbb3fe9",
+          "dueDate": "2026-07-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "eacebb88-252e-4f31-80c8-5372422fee1d",
+          "dueDate": "2026-08-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "8c0f4960-a828-49cc-81d1-ffb718a0cf63",
+          "dueDate": "2026-09-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "13c07997-7276-4e56-bae0-825201caf5e4",
+          "dueDate": "2026-10-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "0e9bd318-5b68-4206-a138-06b16dfa2efc",
+          "dueDate": "2026-11-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "00184054-23b6-48da-adb5-6dd2b28655cb",
+          "dueDate": "2026-12-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "88eccd3b-343e-4e91-a534-37e84a4b60ac",
+          "dueDate": "2027-01-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "4f239fbb-f151-4ec8-b38e-39e60a6639a6",
+          "dueDate": "2027-02-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "074aa721-0c82-458f-89e2-4309c5585f87",
+          "dueDate": "2027-03-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        },
+        {
+          "id": "1a18c9d8-2e56-4205-90cd-0811b01dc3b4",
+          "dueDate": "2027-04-25",
+          "amount": 235,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "aea780ad-c41f-4410-bfd2-b7208097c965",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Canaletas adicionais",
+      "supplier": "Souza Materiais",
+      "amount": 242.5,
+      "date": "2026-06-25",
+      "paymentMethod": "avista",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "3037eb4c-7a8c-4d14-a832-76f8dd704075",
+          "dueDate": "2026-06-25",
+          "amount": 242.5,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    },
+    {
+      "id": "c8061dff-311f-4e99-b515-0f019f0b53d3",
+      "stageId": "8e392062-81ea-412f-9a69-91bbe223ff57",
+      "description": "Impermeabilizante baldrames",
+      "supplier": "Souza Materiais",
+      "amount": 336.8,
+      "date": "2026-06-23",
+      "paymentMethod": "avista",
+      "receiptType": "recibo",
+      "hasPendency": true,
+      "pendencyNote": "",
+      "installments": [
+        {
+          "id": "65bb4d6f-4efc-4d5a-9065-5084cd47029c",
+          "dueDate": "2026-06-23",
+          "amount": 336.8,
+          "paid": false,
+          "accountId": "8b37d919-3956-4e98-acc7-7e70f1bf6aff"
+        }
+      ]
+    }
+  ],
+  "quotations": [
+    {
+      "id": "5bfdb871-3fa8-4f78-9ee6-78be620de57d",
+      "name": "Hidráulica fundação",
+      "createdAt": "2026-06-18T16:53:56.572Z",
+      "status": "encerrado",
+      "winnerProposalId": "6f37a606-bce6-43ab-af00-e734b58a7c08",
+      "items": [
+        {
+          "description": "Tubo esgoto 100mm (barra)",
+          "unit": "un",
+          "quantity": 10,
+          "id": "d4cedaeb-551b-4caa-9287-2590cefb2d51"
+        },
+        {
+          "description": "Tubo esgoto 75mm (barra)",
+          "unit": "un",
+          "quantity": 6,
+          "id": "29f2063c-99d3-4e7c-a30a-c1ea1909bbfa"
+        },
+        {
+          "description": "Tubo esgoto 50mm (barra)",
+          "unit": "un",
+          "quantity": 5,
+          "id": "e0b76fa5-a78e-430a-84aa-f914eb005ffe"
+        },
+        {
+          "description": "Junção esgoto 100x75",
+          "unit": "un",
+          "quantity": 6,
+          "id": "ad0645a3-599b-45a5-834d-a2af9e483f18"
+        },
+        {
+          "description": "Junção esgoto 100x100",
+          "unit": "un",
+          "quantity": 8,
+          "id": "8d8ea7cd-7798-4f48-8039-f9c642c53a79"
+        },
+        {
+          "description": "Junção esgoto 50x50",
+          "unit": "un",
+          "quantity": 12,
+          "id": "930e6669-67e0-4acc-8187-61d234dd3d84"
+        },
+        {
+          "description": "Junção esgoto 100x50mm",
+          "unit": "un",
+          "quantity": 8,
+          "id": "ec71d203-4f3d-425d-8361-db3cc4c76754"
+        },
+        {
+          "description": "Corpo caixa sifonada 100x100x50mm",
+          "unit": "un",
+          "quantity": 14,
+          "id": "f537e990-3fda-4963-aa6e-eb3dd57641f1"
+        },
+        {
+          "description": "Joelho esgoto 90 x 50mm",
+          "unit": "un",
+          "quantity": 30,
+          "id": "05d5445f-fa87-40db-9b24-2b0c98faf5ca"
+        },
+        {
+          "description": "Joelho esgoto 45 x 50mm",
+          "unit": "un",
+          "quantity": 25,
+          "id": "a9d88670-bb85-44af-90ab-fcfce070e831"
+        },
+        {
+          "description": "Joelho esgoto 90 x 100mm",
+          "unit": "un",
+          "quantity": 20,
+          "id": "6a16514d-9547-41d2-8eac-c30bbd5d1a51"
+        },
+        {
+          "description": "Joelho esgoto 45 x 100mm",
+          "unit": "un",
+          "quantity": 15,
+          "id": "bb0c2112-a57e-4008-af37-d80e489140e6"
+        },
+        {
+          "description": "Redução excent esgoto 100x50mm",
+          "unit": "un",
+          "quantity": 4,
+          "id": "6a36bb4f-0a64-4616-87d0-a76568f7c4f7"
+        },
+        {
+          "description": "Redução excent esgoto 75x50mm",
+          "unit": "un",
+          "quantity": 2,
+          "id": "6a77c689-f592-4407-a623-f3a0e1594f8b"
+        },
+        {
+          "description": "Lixa de ferro 80",
+          "unit": "un",
+          "quantity": 1,
+          "id": "98e79fd4-438b-4710-82bd-e57d3d21ee98"
+        },
+        {
+          "description": "Adesivo PVC 850g",
+          "unit": "un",
+          "quantity": 2,
+          "id": "45be03ba-a56e-4d7c-b638-b208c0536087"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "41c6fc75-0771-4114-96be-a65de92b1718",
+          "supplier": "Silcon",
+          "prices": {
+            "d4cedaeb-551b-4caa-9287-2590cefb2d51": 88.45,
+            "29f2063c-99d3-4e7c-a30a-c1ea1909bbfa": 92.25,
+            "e0b76fa5-a78e-430a-84aa-f914eb005ffe": 57.44,
+            "ad0645a3-599b-45a5-834d-a2af9e483f18": 16.19,
+            "8d8ea7cd-7798-4f48-8039-f9c642c53a79": 16.44,
+            "930e6669-67e0-4acc-8187-61d234dd3d84": 6.97,
+            "ec71d203-4f3d-425d-8361-db3cc4c76754": 11.47,
+            "f537e990-3fda-4963-aa6e-eb3dd57641f1": 15.64,
+            "05d5445f-fa87-40db-9b24-2b0c98faf5ca": 2.51,
+            "a9d88670-bb85-44af-90ab-fcfce070e831": 2.53,
+            "6a16514d-9547-41d2-8eac-c30bbd5d1a51": 7.34,
+            "bb0c2112-a57e-4008-af37-d80e489140e6": 6.6,
+            "6a36bb4f-0a64-4616-87d0-a76568f7c4f7": 6.84,
+            "6a77c689-f592-4407-a623-f3a0e1594f8b": 5.52,
+            "98e79fd4-438b-4710-82bd-e57d3d21ee98": 2.81,
+            "45be03ba-a56e-4d7c-b638-b208c0536087": 47.88
+          }
+        },
+        {
+          "id": "6f37a606-bce6-43ab-af00-e734b58a7c08",
+          "supplier": "Itatubos",
+          "prices": {
+            "d4cedaeb-551b-4caa-9287-2590cefb2d51": 84.08,
+            "29f2063c-99d3-4e7c-a30a-c1ea1909bbfa": 91.94,
+            "e0b76fa5-a78e-430a-84aa-f914eb005ffe": 58.6,
+            "ad0645a3-599b-45a5-834d-a2af9e483f18": 15.65,
+            "8d8ea7cd-7798-4f48-8039-f9c642c53a79": 15.9,
+            "930e6669-67e0-4acc-8187-61d234dd3d84": 6.74,
+            "ec71d203-4f3d-425d-8361-db3cc4c76754": 11.09,
+            "f537e990-3fda-4963-aa6e-eb3dd57641f1": 15.11,
+            "05d5445f-fa87-40db-9b24-2b0c98faf5ca": 2.41,
+            "a9d88670-bb85-44af-90ab-fcfce070e831": 2.46,
+            "6a16514d-9547-41d2-8eac-c30bbd5d1a51": 7.09,
+            "bb0c2112-a57e-4008-af37-d80e489140e6": 7.28,
+            "6a36bb4f-0a64-4616-87d0-a76568f7c4f7": 6.37,
+            "6a77c689-f592-4407-a623-f3a0e1594f8b": 5.33,
+            "98e79fd4-438b-4710-82bd-e57d3d21ee98": 2.62,
+            "45be03ba-a56e-4d7c-b638-b208c0536087": 44.38
+          },
+          "proposalNumber": "393836"
+        }
+      ]
+    },
+    {
+      "id": "cd52840a-f59e-457c-891c-c60da0ceda09",
+      "name": "Sondagem Solo",
+      "createdAt": "2026-06-19T12:28:01.882Z",
+      "status": "encerrado",
+      "winnerProposalId": "6a77a879-aef3-4651-83d4-51af7c1399de",
+      "items": [
+        {
+          "description": "Serviço de sondagem do solo",
+          "unit": "un",
+          "quantity": 1,
+          "id": "ac286c89-9f87-40a7-998f-767b67540aee"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "6a77a879-aef3-4651-83d4-51af7c1399de",
+          "supplier": "IAS",
+          "proposalNumber": "IAS-001",
+          "prices": {
+            "ac286c89-9f87-40a7-998f-767b67540aee": 1850
+          }
+        },
+        {
+          "id": "06e4bcd0-bf3e-462c-b837-30135cc17572",
+          "supplier": "Lengeo",
+          "proposalNumber": "L-001",
+          "prices": {
+            "ac286c89-9f87-40a7-998f-767b67540aee": 1980
+          }
+        },
+        {
+          "id": "d3cb37c2-443e-46c2-89e1-6806eadab55c",
+          "supplier": "Sondomais",
+          "proposalNumber": "S-001",
+          "prices": {
+            "ac286c89-9f87-40a7-998f-767b67540aee": 2210
+          }
+        },
+        {
+          "id": "efd0f2be-4554-4215-afc9-7e6c76fed715",
+          "supplier": "H3D",
+          "proposalNumber": "H-001",
+          "prices": {
+            "ac286c89-9f87-40a7-998f-767b67540aee": 2500
+          }
+        }
+      ]
+    },
+    {
+      "id": "ebf91154-f5e5-42ee-8391-1b756a4b26eb",
+      "name": "Madeiras para escora de lajes",
+      "createdAt": "2026-06-24T14:15:38.909Z",
+      "status": "encerrado",
+      "winnerProposalId": "473e6591-0f65-4f77-ac46-12ee27ff31af",
+      "winnerJustification": "Melhor preço total, logística não compensa ter pedidos separados, já havia um crédito na loja de materiais devolvidos",
+      "items": [
+        {
+          "description": "Pontalete eucalipto 3m",
+          "unit": "un",
+          "quantity": 40,
+          "id": "bf88a690-a372-4291-9a69-9e71339f8305"
+        },
+        {
+          "description": "Prego 18x27",
+          "unit": "kg",
+          "quantity": 3,
+          "id": "1cb4d1ce-7a5d-40a1-af73-aaa6b3e52a97"
+        },
+        {
+          "description": "Prego 19x36",
+          "unit": "kg",
+          "quantity": 3,
+          "id": "2e0cf32a-621f-40fb-83ef-8dff34d105b6"
+        },
+        {
+          "description": "Prego aço 18x27",
+          "unit": "kg",
+          "quantity": 2,
+          "id": "5b1b27e2-1107-4f18-9a91-43a85daad53b"
+        },
+        {
+          "description": "Tabua pinus 20 x 3m",
+          "unit": "un",
+          "quantity": 30,
+          "id": "61916bbf-bba8-497d-afcd-9f3dc3aac69b"
+        },
+        {
+          "description": "Sarrafo pinus 10 x 3m",
+          "unit": "un",
+          "quantity": 3,
+          "id": "ebeb96fa-dfaf-4789-a446-5904601a500d"
+        },
+        {
+          "description": "Madeirite 2.20x1.10x9mm",
+          "unit": "un",
+          "quantity": 5,
+          "id": "ce446b63-3470-431a-9bb9-c5aadcb7dd47"
+        },
+        {
+          "description": "Madeirite naval preto 220x110x15mm",
+          "unit": "un",
+          "quantity": 5,
+          "id": "c50621eb-66a2-45a2-99a0-f2e0396d6fb1"
+        },
+        {
+          "description": "Pontalete pinus 3m",
+          "unit": "un",
+          "quantity": 15,
+          "id": "fcb30a5d-e139-4bd5-828f-5c59b8024451"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "5816e01d-df95-4d15-a9c1-0793e8b68873",
+          "supplier": "Madeireira Santa Luzia",
+          "proposalNumber": "26-11623486",
+          "prices": {
+            "bf88a690-a372-4291-9a69-9e71339f8305": 10.1,
+            "1cb4d1ce-7a5d-40a1-af73-aaa6b3e52a97": 19.04,
+            "2e0cf32a-621f-40fb-83ef-8dff34d105b6": 19.04,
+            "5b1b27e2-1107-4f18-9a91-43a85daad53b": 85.76,
+            "61916bbf-bba8-497d-afcd-9f3dc3aac69b": 16.2,
+            "ebeb96fa-dfaf-4789-a446-5904601a500d": 8.1,
+            "ce446b63-3470-431a-9bb9-c5aadcb7dd47": 53.1,
+            "c50621eb-66a2-45a2-99a0-f2e0396d6fb1": 133.7,
+            "fcb30a5d-e139-4bd5-828f-5c59b8024451": 14.59
+          }
+        },
+        {
+          "id": "473e6591-0f65-4f77-ac46-12ee27ff31af",
+          "supplier": "Itamadeiras",
+          "proposalNumber": "86957",
+          "prices": {
+            "bf88a690-a372-4291-9a69-9e71339f8305": 9.71,
+            "c50621eb-66a2-45a2-99a0-f2e0396d6fb1": 135.39,
+            "ce446b63-3470-431a-9bb9-c5aadcb7dd47": 53.57,
+            "ebeb96fa-dfaf-4789-a446-5904601a500d": 7.68,
+            "fcb30a5d-e139-4bd5-828f-5c59b8024451": 14.02,
+            "1cb4d1ce-7a5d-40a1-af73-aaa6b3e52a97": 16.2,
+            "2e0cf32a-621f-40fb-83ef-8dff34d105b6": 16.2,
+            "5b1b27e2-1107-4f18-9a91-43a85daad53b": 58.48,
+            "61916bbf-bba8-497d-afcd-9f3dc3aac69b": 15.31
+          }
+        }
+      ]
+    },
+    {
+      "id": "7c77d792-2c7e-48bc-acdd-7e427fc69514",
+      "name": "Lajes de contrapiso",
+      "createdAt": "2026-06-24T16:23:55.356Z",
+      "status": "aberto",
+      "items": [
+        {
+          "description": "164,64m2 Laje pré fabricada H12 sem ferros de reforço",
+          "unit": "un",
+          "quantity": 1,
+          "id": "29d8bf90-e4de-46d5-8540-b19721195bf8"
+        },
+        {
+          "description": "Tela para 164,64m2 de lajes H12",
+          "unit": "un",
+          "quantity": 1,
+          "id": "f2af99f5-1ec9-45d9-bf13-28822e2014ea"
+        },
+        {
+          "description": "Ferragens de reforço para 164,64m2 de lajes H12",
+          "unit": "un",
+          "quantity": 1,
+          "id": "b7e021a0-110b-4e3a-a753-09ace2b677d4"
+        },
+        {
+          "description": "19,6 metros lineares de TR12",
+          "unit": "un",
+          "quantity": 1,
+          "id": "ca494c36-c263-41d5-95dd-0e53cc3317d7"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "21471db7-24d6-42f9-bf40-3f590a92bc67",
+          "supplier": "Lajes Pré Itatiba",
+          "proposalNumber": "260626-092129",
+          "prices": {
+            "29d8bf90-e4de-46d5-8540-b19721195bf8": 12289,
+            "f2af99f5-1ec9-45d9-bf13-28822e2014ea": 1980,
+            "b7e021a0-110b-4e3a-a753-09ace2b677d4": 0
+          }
+        },
+        {
+          "id": "7ed0a3d7-9d29-4528-b51d-45b2303a69fc",
+          "supplier": "Lajes Cerejeira",
+          "proposalNumber": "1261526",
+          "prices": {
+            "29d8bf90-e4de-46d5-8540-b19721195bf8": 13120,
+            "f2af99f5-1ec9-45d9-bf13-28822e2014ea": 1462,
+            "b7e021a0-110b-4e3a-a753-09ace2b677d4": 1112
+          }
+        },
+        {
+          "id": "5772e144-7bf1-4a5d-8b24-1ca774728a95",
+          "supplier": "MTA Lajes",
+          "proposalNumber": "1588/2026",
+          "prices": {
+            "29d8bf90-e4de-46d5-8540-b19721195bf8": 15060,
+            "f2af99f5-1ec9-45d9-bf13-28822e2014ea": 1783.17
+          }
+        },
+        {
+          "id": "81b896c7-a025-47e3-9eef-0699bdfb2080",
+          "supplier": "Jund Lajes",
+          "proposalNumber": "1308",
+          "prices": {
+            "29d8bf90-e4de-46d5-8540-b19721195bf8": 9659.6,
+            "b7e021a0-110b-4e3a-a753-09ace2b677d4": 2325.51,
+            "f2af99f5-1ec9-45d9-bf13-28822e2014ea": 2415
+          }
+        },
+        {
+          "id": "17017788-6e40-4327-9f86-399be7282fb9",
+          "supplier": "Lajes Jundiai",
+          "proposalNumber": "092/0626",
+          "prices": {
+            "29d8bf90-e4de-46d5-8540-b19721195bf8": 9810.9,
+            "b7e021a0-110b-4e3a-a753-09ace2b677d4": 1174.85,
+            "f2af99f5-1ec9-45d9-bf13-28822e2014ea": 1595.8,
+            "ca494c36-c263-41d5-95dd-0e53cc3317d7": 313.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "75525fd9-cdaf-4e3f-b7a2-2aed5ec7cb76",
+      "name": "Tijolos para 1º pavimento",
+      "createdAt": "2026-07-07T22:27:18.398Z",
+      "status": "encerrado",
+      "winnerProposalId": "94a7a1c7-7925-4006-91c4-957e35eeee7a",
+      "winnerJustification": "Apesar de 300,00 mais caro que a proposta mais barata, o produto parece ser melhor (avaliação no Google é melhor do que o primeiro colocado), além de que consegue entregar na 2a feira (o primeiro colocado pede 7 dias para entrega)",
+      "items": [
+        {
+          "description": "Tijolo 14x19x29",
+          "unit": "un",
+          "quantity": 1800,
+          "id": "65e9930f-4beb-4bea-8da9-a8e2fa9c56e7"
+        },
+        {
+          "description": "Tijolo 9x19x29",
+          "unit": "un",
+          "quantity": 1800,
+          "id": "075e3808-9299-4c93-9583-3c1400a21269"
+        },
+        {
+          "description": "Meio tijolo 14x19x14",
+          "unit": "un",
+          "quantity": 200,
+          "id": "dba1a86a-b85d-48ef-966f-d5d758ebda61"
+        },
+        {
+          "description": "Meio tijolo 9x19x14",
+          "unit": "un",
+          "quantity": 200,
+          "id": "614e7f0f-ef97-46cf-965e-5ebacf226ea0"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "6a24ad32-0400-4724-9f3b-20499ca98f1b",
+          "supplier": "Cerâmica e Olaria ABCD",
+          "proposalNumber": "B-2370",
+          "prices": {
+            "65e9930f-4beb-4bea-8da9-a8e2fa9c56e7": 2.14,
+            "075e3808-9299-4c93-9583-3c1400a21269": 1.53,
+            "dba1a86a-b85d-48ef-966f-d5d758ebda61": 2.14,
+            "614e7f0f-ef97-46cf-965e-5ebacf226ea0": 1.53
+          }
+        },
+        {
+          "id": "94a7a1c7-7925-4006-91c4-957e35eeee7a",
+          "supplier": "Moraes Tijolos",
+          "proposalNumber": "0010175",
+          "prices": {
+            "65e9930f-4beb-4bea-8da9-a8e2fa9c56e7": 1.89,
+            "075e3808-9299-4c93-9583-3c1400a21269": 1.61,
+            "dba1a86a-b85d-48ef-966f-d5d758ebda61": 1.89,
+            "614e7f0f-ef97-46cf-965e-5ebacf226ea0": 1.61
+          }
+        },
+        {
+          "id": "c54d3af3-e390-4fdf-8eac-0cb4af3d6fb1",
+          "supplier": "Cerâmica Mifale",
+          "proposalNumber": "5780",
+          "prices": {
+            "65e9930f-4beb-4bea-8da9-a8e2fa9c56e7": 2.42,
+            "075e3808-9299-4c93-9583-3c1400a21269": 2.15,
+            "dba1a86a-b85d-48ef-966f-d5d758ebda61": 1.98,
+            "614e7f0f-ef97-46cf-965e-5ebacf226ea0": 1.79
+          }
+        },
+        {
+          "id": "fb4ef7a4-bbb4-4d33-968d-598ed25a8bd9",
+          "supplier": "Cerâmica Donatti",
+          "proposalNumber": "0001",
+          "prices": {
+            "65e9930f-4beb-4bea-8da9-a8e2fa9c56e7": 1.96,
+            "dba1a86a-b85d-48ef-966f-d5d758ebda61": 1.96,
+            "075e3808-9299-4c93-9583-3c1400a21269": 1.39,
+            "614e7f0f-ef97-46cf-965e-5ebacf226ea0": 1.39
+          }
+        }
+      ]
+    },
+    {
+      "id": "46d9e575-4256-4a05-8649-45e4501e38ef",
+      "name": "Areia para 1º pavimento",
+      "createdAt": "2026-07-08T12:09:25.987Z",
+      "status": "encerrado",
+      "winnerProposalId": "79099c29-da90-48ba-884d-c02edf0096c6",
+      "winnerJustification": "Melhor preço. Produto já utilizado de boa qualidade.",
+      "items": [
+        {
+          "description": "Areia lavada média",
+          "unit": "m3",
+          "quantity": 7,
+          "id": "541d286b-dc35-4808-bce6-c9636229c60f"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "9b7fa624-99c7-46ac-805d-b4c8e1486656",
+          "supplier": "Portella",
+          "proposalNumber": "0600678",
+          "prices": {
+            "541d286b-dc35-4808-bce6-c9636229c60f": 209
+          }
+        },
+        {
+          "id": "31fbdb6e-3dcc-43fa-968c-75b63aca4386",
+          "supplier": "Souza Materiais",
+          "proposalNumber": "208996",
+          "prices": {
+            "541d286b-dc35-4808-bce6-c9636229c60f": 240
+          }
+        },
+        {
+          "id": "79099c29-da90-48ba-884d-c02edf0096c6",
+          "supplier": "Fucao",
+          "proposalNumber": "13856",
+          "prices": {
+            "541d286b-dc35-4808-bce6-c9636229c60f": 189
+          }
+        }
+      ]
+    },
+    {
+      "id": "6c51706e-05b6-499f-9ebe-6c2293c6d2f9",
+      "name": "Cimento 1º pavimento",
+      "createdAt": "2026-07-08T12:13:30.822Z",
+      "status": "aberto",
+      "items": [
+        {
+          "description": "Cimento CP III CSN 50kg",
+          "unit": "un",
+          "quantity": 15,
+          "id": "ef165d2e-9d8d-452c-9716-97468b24af59"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "9e1a7080-8a19-4588-b1e7-18c50a16950d",
+          "supplier": "Portella",
+          "proposalNumber": "0600678",
+          "prices": {
+            "ef165d2e-9d8d-452c-9716-97468b24af59": 37.9
+          }
+        },
+        {
+          "id": "fb4acc43-55c2-40ee-86fd-9e5c836bc48c",
+          "supplier": "Souza Materiais",
+          "proposalNumber": "208996",
+          "prices": {
+            "ef165d2e-9d8d-452c-9716-97468b24af59": 42
+          }
+        },
+        {
+          "id": "bd6e7276-8337-4ef2-9349-3637159946e3",
+          "supplier": "Santa Odilia",
+          "proposalNumber": "254979",
+          "prices": {
+            "ef165d2e-9d8d-452c-9716-97468b24af59": 38.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "02e34c76-4a22-400c-b8a5-88bd3fb298f3",
+      "name": "Materiais gerais para alvenaria térreo",
+      "createdAt": "2026-07-14T17:28:09.864Z",
+      "status": "aberto",
+      "items": [
+        {
+          "description": "Carrinho de pedreiro",
+          "unit": "un",
+          "quantity": 1,
+          "id": "a9f000ec-9ddc-406b-ba36-2426d42e4cd4"
+        },
+        {
+          "description": "Arame recozido 12 grosso",
+          "unit": "kg",
+          "quantity": 5,
+          "id": "ba43a289-4e8d-4a8f-af96-582b0b4a78a1"
+        },
+        {
+          "description": "Prego 18x27",
+          "unit": "kg",
+          "quantity": 3,
+          "id": "13ea1250-11ac-4d18-ac3a-9943ae1bc664"
+        },
+        {
+          "description": "Cimento CP III CSN 50kg",
+          "unit": "un",
+          "quantity": 15,
+          "id": "9d19a33f-246c-4ad3-ae89-024e75f9b270"
+        }
+      ],
+      "proposals": [
+        {
+          "id": "7791961a-8715-4560-8c5a-fceda45b297b",
+          "supplier": "Santa Odilia",
+          "proposalNumber": "256386",
+          "prices": {
+            "a9f000ec-9ddc-406b-ba36-2426d42e4cd4": 322.4,
+            "ba43a289-4e8d-4a8f-af96-582b0b4a78a1": 16.3,
+            "13ea1250-11ac-4d18-ac3a-9943ae1bc664": 17.85,
+            "9d19a33f-246c-4ad3-ae89-024e75f9b270": 37.95
+          }
+        },
+        {
+          "id": "c63c4951-cb1d-4c08-a0ea-cceef0650820",
+          "supplier": "Baptistella",
+          "proposalNumber": "464978",
+          "prices": {
+            "9d19a33f-246c-4ad3-ae89-024e75f9b270": 40,
+            "a9f000ec-9ddc-406b-ba36-2426d42e4cd4": 250,
+            "ba43a289-4e8d-4a8f-af96-582b0b4a78a1": 16.2,
+            "13ea1250-11ac-4d18-ac3a-9943ae1bc664": 19
+          }
+        },
+        {
+          "id": "e4392687-30af-4e99-8cae-2f7fe89534b7",
+          "supplier": "Souza",
+          "proposalNumber": "209810",
+          "prices": {
+            "9d19a33f-246c-4ad3-ae89-024e75f9b270": 39.01,
+            "a9f000ec-9ddc-406b-ba36-2426d42e4cd4": 213.64,
+            "ba43a289-4e8d-4a8f-af96-582b0b4a78a1": 14.87,
+            "13ea1250-11ac-4d18-ac3a-9943ae1bc664": 16.71
+          }
+        },
+        {
+          "id": "5bc9d6a5-72b0-4b15-8a42-6ae18e9caf75",
+          "supplier": "Portella",
+          "proposalNumber": "0601402",
+          "prices": {
+            "9d19a33f-246c-4ad3-ae89-024e75f9b270": 37.9,
+            "13ea1250-11ac-4d18-ac3a-9943ae1bc664": 23.9,
+            "a9f000ec-9ddc-406b-ba36-2426d42e4cd4": 255,
+            "ba43a289-4e8d-4a8f-af96-582b0b4a78a1": 19.9
+          }
+        }
+      ]
+    }
+  ]
+}

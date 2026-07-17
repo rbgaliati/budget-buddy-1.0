@@ -1,0 +1,33 @@
+# Maven build output
+target/
+
+# Frontend build output
+budget-buddy/budget-buddy-main/node_modules/
+budget-buddy/budget-buddy-main/dist/
+budget-buddy/budget-buddy-main/.output/
+budget-buddy/budget-buddy-main/.vinxi/
+budget-buddy/budget-buddy-main/.nitro/
+budget-buddy/budget-buddy-main/.tanstack/
+
+# Logs
+*.log
+backend.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# H2 database files (in-memory, nada a versionar)
+*.db
+*.mv.db
+*.trace.db
+
+# Environment / secrets
+.env
+.env.local
+*.local
