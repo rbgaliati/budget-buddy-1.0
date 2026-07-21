@@ -82,6 +82,7 @@ function Lancamentos() {
   const [date, setDate] = useState(() => new Date().toISOString().slice(0, 10));
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("avista");
   const [receiptType, setReceiptType] = useState<ReceiptType>("nota_fiscal");
+  const [invoiceNumber, setInvoiceNumber] = useState("");
   const [accountId, setAccountId] = useState<string | undefined>(undefined);
   const [paidNow, setPaidNow] = useState(false);
   const [installmentsCount, setInstallmentsCount] = useState("1");
@@ -106,6 +107,7 @@ function Lancamentos() {
     setPaidNow(false);
     setInstallmentsCount("1");
     setReceiptType("nota_fiscal");
+    setInvoiceNumber("");
     setSplits([]);
   };
 
@@ -169,6 +171,7 @@ function Lancamentos() {
                     date,
                     paymentMethod,
                     receiptType,
+                    invoiceNumber: receiptType === "nota_fiscal" ? invoiceNumber.trim() : undefined,
                     installments: buildInstallments(sp.amount),
                   })
                 ),
@@ -187,6 +190,7 @@ function Lancamentos() {
               date,
               paymentMethod,
               receiptType,
+              invoiceNumber: receiptType === "nota_fiscal" ? invoiceNumber.trim() : undefined,
               installments: buildInstallments(value),
             })
           ),
@@ -351,7 +355,7 @@ function Lancamentos() {
 
               <div className="md:col-span-3">
                 <Label>Tipo de comprovante</Label>
-                <Select value={receiptType} onValueChange={(v) => setReceiptType(v as ReceiptType)}>
+                <Select value={receiptType} onValueChange={(v) => { setReceiptType(v as ReceiptType); if (v !== "nota_fiscal") setInvoiceNumber(""); }}>
                   <SelectTrigger className="mt-1">
                     <SelectValue />
                   </SelectTrigger>
@@ -362,6 +366,19 @@ function Lancamentos() {
                   </SelectContent>
                 </Select>
               </div>
+
+              {receiptType === "nota_fiscal" && (
+                <div className="md:col-span-3">
+                  <Label htmlFor="invoiceNumber">Nº da Nota Fiscal</Label>
+                  <Input
+                    id="invoiceNumber"
+                    value={invoiceNumber}
+                    onChange={(e) => setInvoiceNumber(e.target.value)}
+                    placeholder="Ex: 001234"
+                    className="mt-1"
+                  />
+                </div>
+              )}
 
               <div className="md:col-span-3">
                 <Label>{paymentMethod === "cartao" ? "Cartão (padrão)" : "Conta (padrão)"}</Label>
@@ -466,6 +483,7 @@ function Lancamentos() {
                   "Fornecedor",
                   "Forma pagamento",
                   "Tipo comprovante",
+                  "Nº Nota Fiscal",
                   "Parcela",
                   "Total parcelas",
                   "Vencimento",
@@ -484,6 +502,7 @@ function Lancamentos() {
                     e.supplier || "",
                     paymentMethodLabel[e.paymentMethod],
                     e.receiptType ? receiptTypeLabel[e.receiptType] : "",
+                    e.receiptType === "nota_fiscal" ? (e.invoiceNumber || "") : "",
                     String(idx + 1),
                     String(e.installments.length),
                     formatISODateBR(i.dueDate),
@@ -1203,6 +1222,7 @@ function EditExpenseDialog({
   const [stageId, setStageId] = useState<string | undefined>(undefined);
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("avista");
   const [receiptType, setReceiptType] = useState<ReceiptType>("nota_fiscal");
+  const [invoiceNumber, setInvoiceNumber] = useState("");
 
   const open = expense !== null;
 
@@ -1216,6 +1236,7 @@ function EditExpenseDialog({
     setStageId(expense.stageId);
     setPaymentMethod(expense.paymentMethod);
     setReceiptType(expense.receiptType ?? "nota_fiscal");
+    setInvoiceNumber(expense.invoiceNumber ?? "");
   }
 
   const handleSave = () => {
@@ -1227,6 +1248,7 @@ function EditExpenseDialog({
       stageId,
       paymentMethod,
       receiptType,
+      invoiceNumber: receiptType === "nota_fiscal" ? invoiceNumber.trim() : undefined,
     });
     lastIdRef[1](null);
     onClose();
@@ -1303,7 +1325,7 @@ function EditExpenseDialog({
           </div>
           <div>
             <Label>Tipo de comprovante</Label>
-            <Select value={receiptType} onValueChange={(v) => setReceiptType(v as ReceiptType)}>
+            <Select value={receiptType} onValueChange={(v) => { setReceiptType(v as ReceiptType); if (v !== "nota_fiscal") setInvoiceNumber(""); }}>
               <SelectTrigger className="mt-1">
                 <SelectValue />
               </SelectTrigger>
@@ -1314,6 +1336,18 @@ function EditExpenseDialog({
               </SelectContent>
             </Select>
           </div>
+          {receiptType === "nota_fiscal" && (
+            <div>
+              <Label htmlFor="editInvoiceNumber">Nº da Nota Fiscal</Label>
+              <Input
+                id="editInvoiceNumber"
+                value={invoiceNumber}
+                onChange={(e) => setInvoiceNumber(e.target.value)}
+                placeholder="Ex: 001234"
+                className="mt-1"
+              />
+            </div>
+          )}
           <p className="text-xs text-muted-foreground">
             Valor, parcelas, contas e datas de vencimento são editados expandindo a linha na tabela.
           </p>

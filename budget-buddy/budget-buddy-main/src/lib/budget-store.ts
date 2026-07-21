@@ -45,6 +45,7 @@ export type Expense = {
   date: string; // data da despesa, ISO
   paymentMethod: PaymentMethod;
   receiptType?: ReceiptType;
+  invoiceNumber?: string;
   installments: Installment[];
   items?: ExpenseItem[];
   hasPendency?: boolean;
@@ -132,6 +133,7 @@ function normalizeState(parsed: StoredBudgetState): BudgetState {
     date: e.date,
     paymentMethod: e.paymentMethod,
     receiptType: e.receiptType,
+    invoiceNumber: e.invoiceNumber,
     items: e.items,
     hasPendency: e.hasPendency ?? false,
     pendencyNote: e.pendencyNote ?? "",

@@ -60,6 +60,9 @@ public class Expense {
     
     @Column
     private String pendencyNote;
+
+    @Column
+    private String invoiceNumber;
     
     public enum PaymentMethod {
         avista, boleto, cartao, parcelado

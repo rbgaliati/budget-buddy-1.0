@@ -32,6 +32,7 @@ public class BackupImportDto {
         public String date;
         public String paymentMethod;
         public String receiptType;
+        public String invoiceNumber;
         public List<ItemDto> items;
         public Boolean hasPendency;
         public String pendencyNote;

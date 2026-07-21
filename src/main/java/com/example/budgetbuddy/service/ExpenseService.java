@@ -42,6 +42,7 @@ public class ExpenseService {
             existing.setDate(expense.getDate());
             existing.setPaymentMethod(expense.getPaymentMethod());
             existing.setReceiptType(expense.getReceiptType());
+            existing.setInvoiceNumber(expense.getInvoiceNumber());
             existing.setHasPendency(expense.isHasPendency());
             existing.setPendencyNote(expense.getPendencyNote());
             return expenseRepository.save(existing);

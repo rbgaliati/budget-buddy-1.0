@@ -52,6 +52,7 @@ public class ExportController {
             dto.date = e.getDate() != null ? e.getDate().toString() : null;
             dto.paymentMethod = e.getPaymentMethod() != null ? e.getPaymentMethod().name() : "avista";
             dto.receiptType = e.getReceiptType() != null ? e.getReceiptType().name() : "sem_comprovante";
+            dto.invoiceNumber = e.getInvoiceNumber();
             dto.hasPendency = e.isHasPendency();
             dto.pendencyNote = e.getPendencyNote();
 

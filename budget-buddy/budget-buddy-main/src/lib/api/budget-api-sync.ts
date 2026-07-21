@@ -36,6 +36,7 @@ function transformExpensesFromApi(expenses: any[]): Expense[] {
     date: e.date,
     paymentMethod: e.paymentMethod,
     receiptType: e.receiptType,
+    invoiceNumber: e.invoiceNumber,
     items: (e.items || []).map((i: any) => ({
       id: i.id,
       kind: i.kind,
@@ -158,6 +159,7 @@ export const apiSync = {
         date: expense.date,
         paymentMethod: expense.paymentMethod,
         receiptType: expense.receiptType,
+        invoiceNumber: expense.invoiceNumber,
         items: expense.items || [],
         installments: expense.installments || [],
         hasPendency: expense.hasPendency,
@@ -180,6 +182,7 @@ export const apiSync = {
         date: patch.date,
         paymentMethod: patch.paymentMethod,
         receiptType: patch.receiptType,
+        invoiceNumber: patch.invoiceNumber,
         hasPendency: patch.hasPendency,
         pendencyNote: patch.pendencyNote,
       });
