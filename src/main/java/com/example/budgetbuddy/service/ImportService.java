@@ -120,7 +120,7 @@ public class ImportService {
                 }
                 expense.setHasPendency(expenseDto.hasPendency != null && expenseDto.hasPendency);
                 expense.setPendencyNote(expenseDto.pendencyNote != null ? expenseDto.pendencyNote : "");
-                expense.setInvoiceNumber(expenseDto.invoiceNumber);
+                expense.setInvoiceNumber(Expense.ReceiptType.nota_fiscal.name().equals(expenseDto.receiptType) ? expenseDto.invoiceNumber : null);
                 entityManager.persist(expense);
                 expensesCount++;
 

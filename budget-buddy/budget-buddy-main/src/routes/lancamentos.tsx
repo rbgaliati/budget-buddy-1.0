@@ -72,6 +72,16 @@ function formatISODateBR(iso: string): string {
   return `${m[3]}/${m[2]}/${m[1]}`;
 }
 
+function makeReceiptTypeChangeHandler(
+  setReceiptType: (v: ReceiptType) => void,
+  setInvoiceNumber: (v: string) => void,
+) {
+  return (v: string) => {
+    setReceiptType(v as ReceiptType);
+    if (v !== "nota_fiscal") setInvoiceNumber("");
+  };
+}
+
 function Lancamentos() {
   const state = useBudget();
   const loading = useLoading();
@@ -215,6 +225,8 @@ function Lancamentos() {
   );
   const useInstallmentsUi = paymentMethod === "cartao" || paymentMethod === "parcelado";
 
+  const handleReceiptTypeChange = makeReceiptTypeChangeHandler(setReceiptType, setInvoiceNumber);
+
   const sorted = [...state.expenses].sort((a, b) => b.date.localeCompare(a.date));
   const supplierSuggestions = Array.from(
     new Set(state.expenses.map((e) => e.supplier).filter((s) => s.trim().length > 0)),
@@ -355,7 +367,7 @@ function Lancamentos() {
 
               <div className="md:col-span-3">
                 <Label>Tipo de comprovante</Label>
-                <Select value={receiptType} onValueChange={(v) => { setReceiptType(v as ReceiptType); if (v !== "nota_fiscal") setInvoiceNumber(""); }}>
+                <Select value={receiptType} onValueChange={handleReceiptTypeChange}>
                   <SelectTrigger className="mt-1">
                     <SelectValue />
                   </SelectTrigger>
@@ -1254,6 +1266,8 @@ function EditExpenseDialog({
     onClose();
   };
 
+  const handleReceiptTypeChange = makeReceiptTypeChangeHandler(setReceiptType, setInvoiceNumber);
+
   return (
     <Dialog
       open={open}
@@ -1325,7 +1339,7 @@ function EditExpenseDialog({
           </div>
           <div>
             <Label>Tipo de comprovante</Label>
-            <Select value={receiptType} onValueChange={(v) => { setReceiptType(v as ReceiptType); if (v !== "nota_fiscal") setInvoiceNumber(""); }}>
+            <Select value={receiptType} onValueChange={handleReceiptTypeChange}>
               <SelectTrigger className="mt-1">
                 <SelectValue />
               </SelectTrigger>
